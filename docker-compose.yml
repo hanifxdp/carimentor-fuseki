@@ -9,7 +9,8 @@ services:
         volumes:
             - fuseki:/app
         environment:
-                - ADMIN_PASSWORD=kudaliar123
+                - ADMIN_PASSWORD=kudalompat123
+                - PORT=3030
 
 volumes:
     fuseki:
