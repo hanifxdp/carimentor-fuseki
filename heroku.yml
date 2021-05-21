@@ -1,3 +1,6 @@
 build:
   docker:
     web: Dockerfile
+
+run:
+  web: /jena-fuseki/fuseki-server --port=$PORT
