@@ -1,0 +1,16 @@
+version: "3.6"
+services:
+    jena-fuseki:
+        container_name: jena-fuseki
+        build: .
+        restart: always
+        ports:
+            - "3030:3030"
+        volumes:
+            - fuseki:/app
+        environment:
+                - ADMIN_PASSWORD=kudaliar123
+
+volumes:
+    fuseki:
+        name: fuseki
